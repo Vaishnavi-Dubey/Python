@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-fundamentals"
+version = "1.0.0"
+description = "A comprehensive Python reference library and project showcase."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Vaishnavi Dubey", email = "vaishnavidubey@example.com"}
+]
+keywords = ["python", "learning", "fundamentals", "oop", "machine-learning"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "SpeechRecognition==3.10.0",
+    "pyttsx3==2.90",
+    "pyaudio==0.2.13",
+    "numpy>=1.20.0",
+    "matplotlib>=3.4.0",
+    "scikit-learn>=1.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Vaishnavi-Dubey/Python"
+"Bug Tracker" = "https://github.com/Vaishnavi-Dubey/Python/issues"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203"
