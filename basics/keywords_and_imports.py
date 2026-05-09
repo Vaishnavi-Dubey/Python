@@ -1,5 +1,3 @@
-
-
 # --- Content from import.py ---
 # import keyword
 import math
@@ -19,8 +17,8 @@ print(m.factorial(5))
 
 # --- Content from with_examples.py ---
 # using with statement
-with open('file_path', 'w') as file:
-    file.write('hello world !')
+with open("file_path", "w") as file:
+    file.write("hello world !")
 
 
 # --- Content from del_examples.py ---

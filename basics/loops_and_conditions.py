@@ -1,10 +1,8 @@
-
-
 # --- Content from if else elif.py ---
 i = 20
-if (i == 10):
+if i == 10:
     print("i is 10")
-elif (i == 20):
+elif i == 20:
     print("i is 20")
 else:
     print("i is not present")
@@ -55,21 +53,21 @@ for i in range(n):
 
 # --- Content from selectionSatement.py ---
 num1 = 34
-if (num1 > 12):
+if num1 > 12:
     print("Num1 is good")
-elif (num1 > 35):
+elif num1 > 35:
     print("Num2 is not gooooo....")
 else:
-print("Num2 is great")
+    print("Num2 is great")
 
 
 # --- Content from iteration_range.py ---
 for i in range(0, 10):
-	print(i)
+    print(i)
 
 
 # --- Content from iterations.py ---
 i = 1
-while (i < 10):
+while i < 10:
     print(i)
     i += 1

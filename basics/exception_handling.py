@@ -1,5 +1,3 @@
-
-
 # --- Content from exception handeling.py ---
 # initializing number
 a = 4
@@ -17,7 +15,7 @@ except ZeroDivisionError:
 finally:
     # this block is always executed
     # regardless of exception generation.
-    print('This is always executed')
+    print("This is always executed")
 
 # assert Keyword
 # using assert to check for 0

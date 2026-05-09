@@ -1,12 +1,10 @@
-
-
 # --- Content from input.py ---
 val = input("Enter your value: ")
 print(val)
 
 
 # --- Content from input1.py ---
-name = input('What is your name?\n')  # \n ---> newline ---> It causes a line break
+name = input("What is your name?\n")  # \n ---> newline ---> It causes a line break
 print(name)
 
 

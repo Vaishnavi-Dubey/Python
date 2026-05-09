@@ -1,8 +1,6 @@
-
-
 # --- Content from 5_swap.py ---
-P = int(input('Enter the value of P '))
-Q = int(input('Enter the value of Q '))
+P = int(input("Enter the value of P "))
+Q = int(input("Enter the value of Q "))
 
 # To swap the value of two variables
 # we will user third variable which is a temporary variable

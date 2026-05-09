@@ -1,5 +1,3 @@
-
-
 # --- Content from and or not in.py ---
 # or (returns True)
 print(True or False)
@@ -11,19 +9,19 @@ print(False and True)
 print(not True)
 
 # using "in" to check
-if 's' in 'geeksforgeeks':
+if "s" in "geeksforgeeks":
     print("s is part of geeksforgeeks")
 else:
     print("s is not part of geeksforgeeks")
 
 # using "in" to loop through
-for i in 'geeksforgeeks':
+for i in "geeksforgeeks":
     print(i, end=" ")
 
 print("\r")
 
 # using is to check object identity string is immutable( cannot be changed once allocated) hence occupy same memory location
-print(' ' is ' ')
+print(" " is " ")
 
 # using is to check object identity dictionary is mutable( can be changed once allocated) hence occupy different memory location
 print({} is {})
@@ -44,12 +42,12 @@ x = 24
 y = 20
 list = [10, 20, 30, 40, 50]
 
-if (x not in list):
+if x not in list:
     print("x is NOT present in given list")
 else:
     print("x is present in given list")
 
-if (y in list):
+if y in list:
     print("y is present in given list")
 else:
     print("y is NOT present in given list")
@@ -89,7 +87,7 @@ mul = a * b
 mod = a % b
 
 # Power
-p = a ** b
+p = a**b
 
 # print results
 print(add)
@@ -245,7 +243,7 @@ print(5 - (2 + 3))
 # 2 ** 3 ** 2 is calculated as
 # 2 ** (3 ** 2) and not
 # as (2 ** 3) ** 2
-print(2 ** 3 ** 2)
+print(2**3**2)
 
 
 # --- Content from operator13.py ---
@@ -284,8 +282,11 @@ print((lambda: b, lambda: a)[a < b]())
 # Python program to demonstrate nested ternary operator
 a, b = 10, 20
 
-print("Both a and b are equal" if a == b else "a is greater than b"
-if a > b else "b is greater than a")
+print(
+    "Both a and b are equal"
+    if a == b
+    else "a is greater than b" if a > b else "b is greater than a"
+)
 
 
 # --- Content from operator16.py ---
@@ -328,6 +329,6 @@ data = [3, 5, 2, 8, 4]
 # Use a for loop to evaluate each element in the data
 for num in data:
     # Use the ternary operator to determine if the number is even or odd
-    result = 'even' if num % 2 == 0 else 'odd'
+    result = "even" if num % 2 == 0 else "odd"
     # Optionally, print the result of the ternary operator for each element
-    print(f'The number {num} is {result}.')
+    print(f"The number {num} is {result}.")

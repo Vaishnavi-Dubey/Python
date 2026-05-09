@@ -1,17 +1,16 @@
-
-
 # --- Content from function.py ---
 def getInteger():
 
-
     result = int(input("Enter integer: "))
+
+
 return result
 
 
 def Main():
 
-
     print("Started")
+
 
 output = getInteger()
 print(output)
@@ -23,8 +22,9 @@ if __name__ == "__main__":
 # --- Content from functions.py ---
 def hello():
 
-
     print("hello")
+
+
 print("hello again")
 hello()
 
@@ -135,6 +135,7 @@ def some_func():
 
 # --- Content from scope.py ---
 # a scope of object
+
 
 def some_func():
     print("Inside some_func")

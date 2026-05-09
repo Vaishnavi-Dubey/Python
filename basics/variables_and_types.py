@@ -1,5 +1,3 @@
-
-
 # --- Content from variables.py ---
 # declare variables
 myNumber = 3

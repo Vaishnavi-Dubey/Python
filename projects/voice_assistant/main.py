@@ -2,10 +2,10 @@ import pyttsx3 as p
 import speech_recognition as sr
 
 engine = p.init()
-rate = engine.getProperty('rate')
-engine.setProperty('rate', 180)
-voices = engine.getProperty('voices')
-engine.setProperty('voices', voices[0].id)
+rate = engine.getProperty("rate")
+engine.setProperty("rate", 180)
+voices = engine.getProperty("voices")
+engine.setProperty("voices", voices[0].id)
 
 engine.say("oh hey there")
 engine.runAndWait()
@@ -19,6 +19,3 @@ with sr.Microphone() as source:
     audio = r.listen(source)
     text = r.recognize_google(audio)
     print(text)
-
-
-

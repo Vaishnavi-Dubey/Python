@@ -1,5 +1,3 @@
-
-
 # --- Content from operator overloading.py ---
 # Python program to show use of
 # + operator for different purposes.
@@ -20,6 +18,7 @@ print("Geeks" * 4)
 # Python Program illustrate how
 # to overload an binary + operator
 # And how it actually works
+
 
 class A:
     def __init__(self, a):
@@ -50,6 +49,7 @@ print(ob3.__add__(ob4))
 # of two complex numbers using binary
 # + operator overloading.
 
+
 class complex:
     def __init__(self, a, b):
         self.a = a
@@ -70,12 +70,13 @@ print(Ob3)
 # Python program to overload
 # a comparison operators
 
+
 class A:
     def __init__(self, a):
         self.a = a
 
     def __gt__(self, other):
-        if (self.a > other.a):
+        if self.a > other.a:
             return True
         else:
             return False
@@ -83,7 +84,7 @@ class A:
 
 ob1 = A(2)
 ob2 = A(3)
-if (ob1 > ob2):
+if ob1 > ob2:
     print("ob1 is greater than ob2")
 else:
     print("ob2 is greater than ob1")
@@ -93,18 +94,19 @@ else:
 # Python program to overload equality
 # and less than operators
 
+
 class A:
     def __init__(self, a):
         self.a = a
 
     def __lt__(self, other):
-        if (self.a < other.a):
+        if self.a < other.a:
             return "ob1 is lessthan ob2"
         else:
             return "ob2 is less than ob1"
 
     def __eq__(self, other):
-        if (self.a == other.a):
+        if self.a == other.a:
             return "Both are equal"
         else:
             return "Not equal"

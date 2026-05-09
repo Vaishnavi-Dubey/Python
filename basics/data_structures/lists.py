@@ -1,5 +1,3 @@
-
-
 # --- Content from list_examples.py ---
 list
 
@@ -30,7 +28,6 @@ L
 # Displaying Second element of the list
 print
 L[1]
-
 
 
 # --- Content from list2.py ---
@@ -72,7 +69,7 @@ print(List[2])
 # --- Content from listaccess2.py ---
 # Creating a Multi-Dimensional List
 # (By Nesting a list inside a List)
-List = [['Geeks', 'For'], ['Geeks']]
+List = [["Geeks", "For"], ["Geeks"]]
 
 # accessing an element from the
 # Multi-Dimensional List using
@@ -94,7 +91,7 @@ print(List)
 # Addition of multiple elements
 # to the List at the end
 # (using Extend Method)
-List.extend([8, 'Geeks', 'Always'])
+List.extend([8, "Geeks", "Always"])
 print("\nList after performing Extend Operation: ")
 print(List)
 
@@ -119,7 +116,7 @@ print(List)
 # Adding elements to the List
 # using Iterator
 for i in range(1, 4):
-	List.append(i)
+    List.append(i)
 print("\nList after Addition of elements from 1-3: ")
 print(List)
 
@@ -129,7 +126,7 @@ print("\nList after Addition of a Tuple: ")
 print(List)
 
 # Addition of List to a List
-List2 = ['For', 'Geeks']
+List2 = ["For", "Geeks"]
 List.append(List2)
 print("\nList after Addition of a List: ")
 print(List)
@@ -140,7 +137,7 @@ print(List)
 # Addition of elements in a List
 
 # Creating a List
-List = [1,2,3,4]
+List = [1, 2, 3, 4]
 print("Initial List: ")
 print(List)
 
@@ -148,7 +145,7 @@ print(List)
 # specific Position
 # (using Insert Method)
 List.insert(3, 12)
-List.insert(0, 'Geeks')
+List.insert(0, "Geeks")
 print("\nList after performing Insert Operation: ")
 print(List)
 
@@ -186,13 +183,13 @@ print(List)
 # Creating a List with
 # mixed type of values
 # (Having numbers and strings)
-List = [1, 2, 'Geeks', 4, 'For', 6, 'Geeks']
+List = [1, 2, "Geeks", 4, "For", 6, "Geeks"]
 print("\nList with the use of Mixed Values: ")
 print(List)
 
 
 # --- Content from listindex.py ---
-List = [1, 2, 'Geeks', 4, 'For', 6, 'Geeks']
+List = [1, 2, "Geeks", 4, "For", 6, "Geeks"]
 
 # accessing an element using
 # negative indexing
@@ -216,7 +213,7 @@ string = input("Enter elements (Space-Separated): ")
 
 # split the strings and store it to a list
 lst = string.split()
-print('The list is:', lst) # printing the list
+print("The list is:", lst)  # printing the list
 
 
 # --- Content from listinput2.py ---
@@ -224,11 +221,20 @@ print('The list is:', lst) # printing the list
 n = int(input("Enter the size of list : "))
 # store integers in a list using map,
 # split and strip functions
-lst = list(map(int, input("Enter the integer\
-elements:").strip().split()))[:n]
+lst = list(
+    map(
+        int,
+        input(
+            "Enter the integer\
+elements:"
+        )
+        .strip()
+        .split(),
+    )
+)[:n]
 
 # printing the list
-print('The list is:', lst)
+print("The list is:", lst)
 
 
 # --- Content from listremove.py ---
@@ -236,8 +242,7 @@ print('The list is:', lst)
 # Removal of elements in a List
 
 # Creating a List
-List = [1, 2, 3, 4, 5, 6,
-		7, 8, 9, 10, 11, 12]
+List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 print("Initial List: ")
 print(List)
 
@@ -251,18 +256,17 @@ print(List)
 
 # --- Content from listremove2.py ---
 # Creating a List
-List = [1, 2, 3, 4, 5, 6,
-		7, 8, 9, 10, 11, 12]
+List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 # Removing elements from List
 # using iterator method
 for i in range(1, 5):
-	List.remove(i)
+    List.remove(i)
 print("\nList after Removing a range of elements: ")
 print(List)
 
 
 # --- Content from listreverse.py ---
 # Reversing a list
-mylist = [1, 2, 3, 4, 5, 'Geek', 'Python']
+mylist = [1, 2, 3, 4, 5, "Geek", "Python"]
 mylist.reverse()
 print(mylist)

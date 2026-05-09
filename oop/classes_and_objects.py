@@ -1,5 +1,3 @@
-
-
 # --- Content from class.py ---
 class Dog:
     # A simple class

@@ -1,10 +1,8 @@
-
-
 # --- Content from tuple_examples.py ---
 # tuple
 
 # creates a tuple which is immutable
-tup = ('Geeks', 'For', 'Geeks')
+tup = ("Geeks", "For", "Geeks")
 
 print(tup)
 
