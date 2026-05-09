@@ -4,25 +4,26 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Stars](https://img.shields.io/github/stars/Vaishnavi-Dubey/Python.svg?style=for-the-badge)](https://github.com/Vaishnavi-Dubey/Python/stargazers)
+[![Lint](https://github.com/Vaishnavi-Dubey/Python/actions/workflows/lint.yml/badge.svg)](https://github.com/Vaishnavi-Dubey/Python/actions/workflows/lint.yml)
 
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 
 </div>
 
-> A curated collection of Python programs — from fundamental concepts (variables, functions, OOP) to interactive projects like a **Voice Assistant**, **Quiz Game**, and **Number Guesser** — serving as a comprehensive Python reference library.
+> A curated collection of Python programs — from fundamental concepts (variables, functions, OOP) to interactive projects like a **Voice Assistant**, **Quiz Game**, and **Number Guesser**, plus **Deep Learning** modules — serving as a professional-grade Python reference library.
 
 ---
 
 ## ✨ Key Features
 
 - 🎤 **Voice Assistant** — Speech recognition-based personal assistant
-- 🎮 **Quiz Game** — Interactive trivia game with scoring
-- 🔢 **Number Guesser** — AI-guesses-your-number game with binary search logic
+- 🎮 **Mini Projects** — Interactive games like Quiz and Number Guesser
+- 🧠 **Deep Learning** — Foundational AI implementations (Linear Regression)
 - 📚 **Core Python Concepts** — Variables, data types, operators, control flow
-- 🏗️ **OOP Fundamentals** — Classes, objects, methods, and inheritance
-- 📖 **Data Structures** — Dictionaries, lists, and built-in data handling
-- 🔧 **Utility Scripts** — Arithmetic operations, swap algorithms, random generation
-- 📝 **Clean Code Practices** — Docstrings, comments, and Pythonic patterns
+- 🏗️ **OOP Fundamentals** — Classes, objects, and operator overloading
+- 🔧 **Utility Scripts** — Math operations, swap algorithms, random generation
+- ⚙️ **CI/CD Integrated** — Automated linting with GitHub Actions
+- 📝 **Clean Code Practices** — Type hints, docstrings, and modular architecture
 
 ---
 
@@ -30,49 +31,38 @@
 
 | Component | Technology |
 |-----------|-----------|
-| **Language** | Python 3.x |
-| **Voice AI** | SpeechRecognition, pyttsx3 |
-| **Randomization** | `random` module |
-| **OOP** | Classes, Inheritance |
-| **I/O** | File handling, user input |
-
----
-
-## 🏗️ Architecture / How It Works
-
-Programs are organized by concept, progressing from fundamentals to interactive applications:
-
-```
-Basics (Variables, Comments) → Operators → Control Flow → Functions
-→ OOP (Classes) → Data Structures (Dicts) → Projects (Games, Voice AI)
-```
-
-Each `.py` file is **standalone** and can be run independently.
+| **Language** | Python 3.10+ |
+| **Voice AI** | SpeechRecognition, pyttsx3, pyaudio |
+| **Deep Learning** | NumPy, Matplotlib |
+| **Automation** | GitHub Actions, Flake8, Black |
+| **I/O** | File handling, advanced string formatting |
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 Python/
-├── 2_Arithmetic.py              # Arithmetic operations
-├── 3_AreaOfTriangle.py          # Geometry calculation
-├── 4_QuadraticEquation.py       # Quadratic formula solver
-├── 5-9_swap*.py                 # 5 different swap techniques
-├── 10_Genraterandom.py          # Random number generation
-├── 11_random1.py                # Advanced randomization
-├── NumberGuesser.py             # 🎮 Number guessing game
-├── QuizGame.py                  # 🎮 Interactive quiz game
-├── VoiceAssistant.py            # 🎤 Voice-controlled assistant
-├── class.py                     # OOP class definitions
-├── def.py                       # Function definitions
-├── dictionary.py / dictionary2.py # Dictionary operations
-├── docstring.py                 # Documentation standards
-├── comment*.py                  # Commenting best practices
-├── end parameter*.py            # Print formatting techniques
-├── and or not in.py             # Logical operators
-├── as.py                        # Context managers & aliases
-├── del.py                       # Object deletion
+├── basics/
+│   ├── data_structures/         # Lists, Dicts, Tuples, Sets, Strings
+│   ├── variables_and_types.py   # Variable definitions and type handling
+│   ├── loops_and_conditions.py  # Control flow (for, while, if-else)
+│   ├── functions_and_scope.py   # Functions, lambdas, and namespaces
+│   ├── operators.py             # Arithmetic, logical, and membership ops
+│   └── syntax_and_io.py         # Print formatting, user I/O, comments
+├── oop/
+│   ├── classes_and_objects.py   # Class definitions and inheritance
+│   └── operator_overloading/    # Advanced magic method examples
+├── utilities/
+│   ├── math_operations.py       # Arithmetic, Area, Quadratic solvers
+│   ├── swap_algorithms.py       # 5 different swap techniques
+│   └── random_generation.py     # Random number utilities
+├── projects/
+│   ├── games/                   # NumberGuesser, QuizGame
+│   └── voice_assistant/         # Voice-controlled assistant (main.py)
+├── deep_learning/               # Linear Regression and ANN modules
+├── .github/workflows/           # CI/CD (Linting)
+├── requirements.txt             # Project dependencies
 └── README.md
 ```
 
@@ -85,12 +75,12 @@ Python/
 git clone https://github.com/Vaishnavi-Dubey/Python.git
 cd Python
 
-# Run any script
-python3 QuizGame.py
+# Create a virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# For Voice Assistant (additional dependencies)
-pip install SpeechRecognition pyttsx3 pyaudio
-python3 VoiceAssistant.py
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ---
@@ -98,28 +88,28 @@ python3 VoiceAssistant.py
 ## ▶️ Usage
 
 ```bash
-# Run the Quiz Game
-python3 QuizGame.py
-
-# Run the Number Guesser
-python3 NumberGuesser.py
-
 # Run the Voice Assistant
-python3 VoiceAssistant.py
+python3 projects/voice_assistant/main.py
 
-# Run any fundamental script
-python3 2_Arithmetic.py
+# Run the Quiz Game
+python3 projects/games/quiz_game.py
+
+# Run the Linear Regression module
+python3 deep_learning/linear_regression.py
+
+# Explore basics
+python3 basics/loops_and_conditions.py
 ```
 
 ---
 
 ## 📈 Impact / Learning / Highlights
 
-- 🎯 **30+ Programs** — Comprehensive coverage from basics to interactive projects
-- 🎤 **Voice AI Integration** — Speech recognition adds an advanced, interactive dimension
-- 🔄 **5 Swap Algorithms** — Demonstrates multiple approaches to a classic CS problem
-- 📚 **Learning Path** — Programs numbered and organized for progressive learning
-- 🧩 **Standalone Files** — Each file is self-contained and immediately runnable
+- 🎯 **30+ Programs** — Reorganized into a modular, scalable architecture.
+- 🎤 **Voice AI Integration** — Advanced interactive personal assistant.
+- 🤖 **Deep Learning** — Foundational implementations for AI enthusiasts.
+- 🛡️ **Defensive Coding** — Improved input validation and error handling.
+- 🔄 **CI/CD Workflow** — Professional development standards with automated checks.
 
 ---
 
