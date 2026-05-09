@@ -17,13 +17,11 @@
 ## ✨ Key Features
 
 - 🎤 **Voice Assistant** — Speech recognition-based personal assistant
-- 🎮 **Mini Projects** — Interactive games like Quiz and Number Guesser
-- 🧠 **Deep Learning** — Foundational AI implementations (Linear Regression)
-- 📚 **Core Python Concepts** — Variables, data types, operators, control flow
-- 🏗️ **OOP Fundamentals** — Classes, objects, and operator overloading
-- 🔧 **Utility Scripts** — Math operations, swap algorithms, random generation
-- ⚙️ **CI/CD Integrated** — Automated linting with GitHub Actions
-- 📝 **Clean Code Practices** — Type hints, docstrings, and modular architecture
+- 🏗️ **OOP Mastery** — Dunder methods, ABCs, and Dataclasses
+- ⚡ **Advanced Python** — Concurrency, Generators, Itertools, and Decorators
+- 🧠 **Deep Learning** — Foundational implementations (Linear Regression, ANN)
+- ⚙️ **Professional Tooling** — Pytest, Type Hints, and CI/CD
+- 📝 **Clean Architecture** — Modular structure with standard configuration
 
 ---
 
@@ -32,10 +30,10 @@
 | Component | Technology |
 |-----------|-----------|
 | **Language** | Python 3.10+ |
-| **Voice AI** | SpeechRecognition, pyttsx3, pyaudio |
+| **Concurrency** | threading, multiprocessing, asyncio |
 | **Deep Learning** | NumPy, Matplotlib |
+| **Testing** | Pytest |
 | **Automation** | GitHub Actions, Flake8, Black |
-| **I/O** | File handling, advanced string formatting |
 
 ---
 
@@ -45,26 +43,37 @@
 Python/
 ├── basics/
 │   ├── data_structures/         # Lists, Dicts, Tuples, Sets, Strings
-│   ├── variables_and_types.py   # Variable definitions and type handling
-│   ├── loops_and_conditions.py  # Control flow (for, while, if-else)
-│   ├── functions_and_scope.py   # Functions, lambdas, and namespaces
-│   ├── operators.py             # Arithmetic, logical, and membership ops
-│   └── syntax_and_io.py         # Print formatting, user I/O, comments
+│   ├── list_comprehensions.py    # List, Dict, Set, Generator comprehensions
+│   ├── file_handling.py         # Text, JSON, CSV I/O with pathlib
+│   ├── variables_and_types.py   # Variable definitions
+│   ├── loops_and_conditions.py  # Control flow
+│   ├── functions_and_scope.py   # Functions, lambdas, and type hints
+│   ├── operators.py             # Arithmetic and logical ops
+│   └── syntax_and_io.py         # Formatting and I/O
 ├── oop/
-│   ├── classes_and_objects.py   # Class definitions and inheritance
-│   └── operator_overloading/    # Advanced magic method examples
+│   ├── classes_and_objects.py   # Class definitions
+│   ├── abstract_classes.py      # ABC and Interfaces
+│   ├── dataclasses.py           # Immutable records (PEP 557)
+│   └── dunder_methods.py        # Magic methods (__add__, __str__, etc.)
+├── advanced/
+│   ├── generators.py            # Yield, send, and pipelines
+│   ├── itertools_functools.py   # Memoization and functional tools
+│   ├── concurrency.py           # Threading, Multiprocessing, AsyncIO
+│   ├── decorators_advanced.py   # Stacked and class-based decorators
+│   └── type_hints.py            # Generics, Protocols, and Annotations
 ├── utilities/
 │   ├── math_operations.py       # Arithmetic, Area, Quadratic solvers
-│   ├── swap_algorithms.py       # 5 different swap techniques
-│   └── random_generation.py     # Random number utilities
+│   ├── swap_algorithms.py       # Swap techniques
+│   └── random_generation.py     # Random utilities
 ├── projects/
 │   ├── games/                   # NumberGuesser, QuizGame
-│   └── voice_assistant/         # Voice-controlled assistant (main.py)
-├── deep_learning/               # Linear Regression and ANN modules
-├── .github/workflows/           # CI/CD (Linting)
-├── requirements.txt             # Project dependencies
-└── README.md
+│   └── voice_assistant/         # Voice-controlled assistant
+├── deep_learning/               # Neural Network and Linear Regression
+├── tests/                       # Unit tests with Pytest
+├── pyproject.toml               # Modern project configuration
+└── requirements.txt             # Project dependencies
 ```
+
 
 ---
 
